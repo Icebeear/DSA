@@ -1,0 +1,31 @@
+class Solution:
+    def sortArray(self, nums: list[int]) -> list[int]:
+        def merge_two_list(a, b):
+            ans = []
+            i, j = 0, 0
+            while i < len(a) and j < len(b):
+                if a[i] < b[j]:
+                    ans.append(a[i])
+                    i += 1 
+                else:
+                    ans.append(b[j])
+                    j += 1 
+            ans += a[i:] + b[j:]
+            return ans 
+
+        def merge(arr):
+            if len(arr) == 1:
+                return arr 
+            mid = len(arr) // 2
+            left = merge(arr[:mid])
+            right = merge(arr[mid:])
+            return merge_two_list(left, right)
+
+        return merge(nums)
+
+  
+'''
+https://leetcode.com/problems/sort-an-numsay/description/
+--------------------------------------------------------
+
+'''

@@ -6,7 +6,8 @@ class Solution:
             if s.count(letter) != t.count(letter):
                 return False
        return True 
-    
+
+#O(n)
 '''
 https://leetcode.com/problems/valid-anagram/description/
 --------------------------------------------------------

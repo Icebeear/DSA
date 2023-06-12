@@ -8,7 +8,8 @@ class Solution:
                 hashmap[x] = 1        
         sorted_tuple = sorted(hashmap.items(), key=lambda x: x[1], reverse=True)
         return [sorted_tuple[i][0] for i in range(k)]
-
+    
+#O(nlogn)
 '''
 https://leetcode.com/problems/top-k-frequent-elements/description/
 ------------------------------------------------------------------

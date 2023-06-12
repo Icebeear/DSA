@@ -8,6 +8,9 @@ class Solution:
                 key[ord(letter) - ord("a")] += 1 
             ans[tuple(key)].append(s)
         return ans.values()
+#O(n * m)
+#n - кол - во строк в списке strs 
+#m - максимальная длина строки в списке 
 '''
 https://leetcode.com/problems/group-anagrams/description/
 ---------------------------------------------------------

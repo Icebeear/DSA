@@ -5,6 +5,7 @@ class Solution(object):
             if (target - v) in hashmap:
                 return [hashmap[target - v], i]
             hashmap[v] = i  
+#O(n)
 '''
 https://leetcode.com/problems/two-sum/
 --------------------------------------

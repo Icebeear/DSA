@@ -20,7 +20,7 @@ class Solution:
                 boxes[(r // 3, c // 3)].add(board[r][c])
 
         return True
-    
+#O(n^2)
 '''
 https://leetcode.com/problems/valid-sudoku/description/
 -------------------------------------------------------

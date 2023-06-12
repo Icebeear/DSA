@@ -6,7 +6,7 @@ class Solution:
                 return True 
             hashset.add(n)
         return False 
-    
+#O(n)    
 '''
 https://leetcode.com/problems/contains-duplicate/
 -------------------------------------------------

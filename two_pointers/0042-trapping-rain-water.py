@@ -14,7 +14,7 @@ class Solution:
                 rmax = max(rmax, height[r])
                 res += rmax - height[r]
         return res 
- 
+    
 '''
 https://leetcode.com/problems/trapping-rain-water/
 --------------------------------------------------

@@ -16,7 +16,7 @@ class Solution:
                     l += 1 
                     r -= 1 
         return ans 
-    
+#O(n^3)
 '''
 https://leetcode.com/problems/3sum/description/
 -----------------------------------------------

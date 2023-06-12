@@ -10,9 +10,10 @@ class Solution:
             else:
                 r -= 1 
         return ans 
-    
+
+#O(n)
 '''
 https://leetcode.com/problems/container-with-most-water/description/
 --------------------------------------------------------------------
-
+Двигаем тот указатель, у которого меньше стена 
 '''

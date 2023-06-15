@@ -8,6 +8,7 @@ class Solution:
             profit = max(profit, price - lowest)
         return profit       
     
+#O(n)
 '''
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 --------------------------------------------------------------

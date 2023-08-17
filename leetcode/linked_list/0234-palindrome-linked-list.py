@@ -33,5 +33,5 @@ class Solution:
 '''
 https://leetcode.com/problems/palindrome-linked-list/
 -----------------------------------------------------
-
+находим мидл (slow), потом реверсем и проверяем на палиндром 
 '''

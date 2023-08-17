@@ -1,20 +1,28 @@
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 class Solution:
     def removeNthFromEnd(self, head, n):
-        dummy = ListNode(next=head)
-        left = dummy 
-        right = head 
+        slow = head 
+        fast = head 
         for _ in range(n):
-            right = right.next 
+            fast = fast.next 
         
-        while right:
-            left = left.next 
-            right = right.next 
+        if not fast:
+            return head.next
 
-        left.next = left.next.next 
-        
-        return dummy.next
+        while fast.next:
+            slow = slow.next 
+            fast = fast.next 
+
+        slow.next = slow.next.next 
+
+        return head 
+    
+'''
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+---------------------------------------------------------------
+
+'''
